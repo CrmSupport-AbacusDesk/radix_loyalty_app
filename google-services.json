@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "932792241102",
+    "project_id": "pearl-abee3",
+    "storage_bucket": "pearl-abee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932792241102:android:e8555876bcd71c141ff99f",
+        "android_client_info": {
+          "package_name": "com.abacusdesk.pearls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqIDiCbSG7IqZahY7_xkD88HJsNo8jqYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "932792241102-sme88qetshgu6va7a11l92rrevoqn2i8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.abacusdesk.pearls"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932792241102:android:9e455fa6a28363801ff99f",
+        "android_client_info": {
+          "package_name": "com.pearl.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqIDiCbSG7IqZahY7_xkD88HJsNo8jqYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "932792241102-sme88qetshgu6va7a11l92rrevoqn2i8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.abacusdesk.pearls"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
