@@ -1,7 +1,37 @@
 {
-  "name": "cordova-plugin-zip",
-  "version": "3.1.0",
-  "description": "Unzips zip files",
+  "_args": [
+    [
+      "cordova-plugin-zip@3.1.0",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_development": true,
+  "_from": "cordova-plugin-zip@3.1.0",
+  "_id": "cordova-plugin-zip@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-N+8G3KlBlVV4GcGubyhz0Z+mZ8UiLsJknoLL4KcmlLxpb6RnndheXusCWt1G999+y+O88P1fpcr77+lKq55QZQ==",
+  "_location": "/cordova-plugin-zip",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-zip@3.1.0",
+    "name": "cordova-plugin-zip",
+    "escapedName": "cordova-plugin-zip",
+    "rawSpec": "3.1.0",
+    "saveSpec": null,
+    "fetchSpec": "3.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-zip/-/cordova-plugin-zip-3.1.0.tgz",
+  "_spec": "3.1.0",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/zip/issues"
+  },
   "cordova": {
     "id": "cordova-plugin-unzip",
     "platforms": [
@@ -9,25 +39,24 @@
       "ios"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MobileChromeApps/cordova-plugin-zip.git"
-  },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
-  ],
+  "description": "Unzips zip files",
   "engines": [
     {
       "name": "cordova",
       "version": ">=3.3.0"
     }
   ],
-  "author": "",
+  "homepage": "https://github.com/MobileChromeApps/zip",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
   "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/MobileChromeApps/zip/issues"
+  "name": "cordova-plugin-zip",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobileChromeApps/cordova-plugin-zip.git"
   },
-  "homepage": "https://github.com/MobileChromeApps/zip"
+  "version": "3.1.0"
 }

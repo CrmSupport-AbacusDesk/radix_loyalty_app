@@ -57,19 +57,19 @@ export class ConstantProvider {
 
  
     //Live URL //
-    public rootUrl2: string = 'https://pearl.abacusdesk.com/api/index.php/'
-    public rootUrl: string = 'https://pearl.abacusdesk.com/api/index.php/app/'
-    public rootUrl1: string = 'https://pearl.abacusdesk.com/'
-    public rootUrl3: string = 'https://pearl.abacusdesk.com/api/index.php/'
-    public rootUrlSfa: string = 'https://pearl.abacusdesk.com/api/index.php/app/'
+    public rootUrl2: string = 'https://radixbattery.basiq360.com/api/index.php/'
+    public rootUrl: string = 'https://radixbattery.basiq360.com/api/index.php/app/'
+    public rootUrl1: string = 'https://radixbattery.basiq360.com/'
+    public rootUrl3: string = 'https://radixbattery.basiq360.com/api/index.php/'
+    public rootUrlSfa: string = 'https://radixbattery.basiq360.com/api/index.php/app/'
     public server_url: string = this.rootUrl1 + 'index.php/app/';
     public upload_url: string = this.rootUrl1 + 'uploads/';
-    public upload_url1: string = 'https://pearl.abacusdesk.com/api/uploads/';
-    public upload_url2: string = 'https://pearl.abacusdesk.com/uploads/order-invoice/';
-    public img_url: string = 'https://pearl.abacusdesk.com/api/';
-    public loyaltyUrl: string = 'https://pearl.abacusdesk.com/api/';
-    public influencer_doc: string = 'https://pearl.abacusdesk.com/api/uploads/influencer_doc/';
-    public support_url: string = 'https://pearl.abacusdesk.com/api/uploads/support/';
+    public upload_url1: string = 'https://radixbattery.basiq360.com/api/uploads/';
+    public upload_url2: string = 'https://radixbattery.basiq360.com/uploads/order-invoice/';
+    public img_url: string = 'https://radixbattery.basiq360.com/api/';
+    public loyaltyUrl: string = 'https://radixbattery.basiq360.com/api/';
+    public influencer_doc: string = 'https://radixbattery.basiq360.com/api/uploads/influencer_doc/';
+    public support_url: string = 'https://radixbattery.basiq360.com/api/uploads/support/';
 
 
 

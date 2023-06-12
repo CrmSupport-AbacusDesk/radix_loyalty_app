@@ -1,34 +1,67 @@
 {
-  "name": "polarcape-cordova-plugin-document-handler",
-  "version": "1.1.1",
-  "description": "A phonegap plugin to handle documents (f.e. PDFs) loaded from a URL.",
-  "main": "www/DocumentHandler.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "polarcape-cordova-plugin-document-handler@1.1.1",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_development": true,
+  "_from": "polarcape-cordova-plugin-document-handler@1.1.1",
+  "_id": "polarcape-cordova-plugin-document-handler@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-W50pCiX39VS08II7dKOxVFAGiMqq1qfi1ylF7zjjydrqqevoMdQ1QArYYjH3GctclhTKM+ab2m9aeS9n544APg==",
+  "_location": "/polarcape-cordova-plugin-document-handler",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "polarcape-cordova-plugin-document-handler@1.1.1",
+    "name": "polarcape-cordova-plugin-document-handler",
+    "escapedName": "polarcape-cordova-plugin-document-handler",
+    "rawSpec": "1.1.1",
+    "saveSpec": null,
+    "fetchSpec": "1.1.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/polarcape-cordova-plugin-document-handler/-/polarcape-cordova-plugin-document-handler-1.1.1.tgz",
+  "_spec": "1.1.1",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": {
+    "name": "Polar Cape",
+    "email": "info@polarcape.com",
+    "url": "http://polarcape.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler/issues"
   },
   "cordova": {
     "id": "polarcape-cordova-plugin-document-handler",
     "platforms": [
-    "android",
-    "ios"
-  ]
+      "android",
+      "ios"
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PolarCape/polarcape-cordova-plugin-document-handler.git"
-  },
+  "description": "A phonegap plugin to handle documents (f.e. PDFs) loaded from a URL.",
+  "homepage": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler",
   "keywords": [
     "polarcape",
     "cordova",
     "pdf"
   ],
+  "license": "MIT",
+  "main": "www/DocumentHandler.js",
+  "name": "polarcape-cordova-plugin-document-handler",
   "peerDependencies": {
     "cordova-plugin-file": ">=4.0.0"
   },
-  "author": "Polar Cape <info@polarcape.com> (http://polarcape.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolarCape/polarcape-cordova-plugin-document-handler.git"
   },
-  "homepage": "https://github.com/PolarCape/polarcape-cordova-plugin-document-handler"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.1"
 }

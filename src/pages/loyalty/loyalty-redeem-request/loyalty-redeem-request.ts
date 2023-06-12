@@ -169,10 +169,10 @@ export class LoyaltyRedeemRequestPage {
     //   return;
     // }
 
-    if (this.gift_type == 'Gift' && !this.data.shipping_address) {
-      this.service.errorToast('Shipping address required');
-      return;
-    }
+    // if (this.gift_type == 'Gift' && !this.data.shipping_address) {
+    //   this.service.errorToast('Shipping address required');
+    //   return;
+    // }
 
     if (this.karigar_detail.country == 'india') {
       if ((this.gift_type == 'Cash') && (this.paymentMode=='Bank') && ((this.karigar_detail.account_holder_name == '' || this.karigar_detail.bank_name == '') || (this.karigar_detail.account_no == '' || this.karigar_detail.ifsc_code == ''))) {

@@ -99,42 +99,42 @@
                     <i class="material-icons ">dashboard</i>
                     <span>Dashboard</span>
                 </div>
-                <div class="btns-group" (click)="orderAdd()">
+                <!-- <div class="btns-group" (click)="orderAdd()">
                     <i class="material-icons ">add_shopping_cart</i>
                     <span>Add Order</span>
-                </div>
+                </div> -->
                 
-                <div class="btns-group" (click)="goToOrderlist()">
+                <!-- <div class="btns-group" (click)="goToOrderlist()">
                     <i class="material-icons ">shopping_cart</i>
                     <span>My Order's</span>
-                </div>
+                </div> -->
                 
-                <div class="btns-group" (click)="goToassignedDr()" *ngIf="constant.UserLoggedInData.all_data?.type!=7">
+                <!-- <div class="btns-group" (click)="goToassignedDr()" *ngIf="constant.UserLoggedInData.all_data?.type!=7">
                     <i class="material-icons ">storefront</i>
                     <span *ngIf="constant.UserLoggedInData.all_data?.type==1">Dealer's</span>
                     <span *ngIf="constant.UserLoggedInData.all_data?.type==3">Channel Partner's</span>
-                </div>
+                </div> -->
                 
                 
-                <ng-container  *ngIf="constant.UserLoggedInData.all_data?.type!=3">
+                <!-- <ng-container  *ngIf="constant.UserLoggedInData.all_data?.type!=3">
                     <div class="btns-group" (click)="goTosecondary()"  *ngIf="constant.UserLoggedInData.all_data?.type==1">
                         <i class="material-icons ">shopping_cart</i>
                         <span>Dealer's Order</span>
-                    </div>
+                    </div> -->
                     
-                    <div class="btns-group" (click)="viewAchievement()">
+                    <!-- <div class="btns-group" (click)="viewAchievement()">
                         <i class="material-icons ">equalizer</i>
                         <span>Target</span>
-                    </div>
+                    </div> -->
                     <!-- <div class="btns-group" (click)="goOnLedger()">
                         <i class="material-icons ">swap_horiz</i>
                         <span>Ledger</span>
                     </div> -->
-                    <div class="btns-group" (click)="goOnInvoice()">
+                    <!-- <div class="btns-group" (click)="goOnInvoice()">
                         <i class="material-icons ">receipt_long</i>
                         <span>Invoice</span>
-                    </div>
-                </ng-container>
+                    </div> -->
+                <!-- </ng-container> -->
                 
                 
                 
@@ -159,7 +159,7 @@
                 
                 <div class="btns-group" (click)="goToWallet()" *ngIf="constant.UserLoggedInData.all_data?.type ==1 || constant.UserLoggedInData.all_data?.type ==3">
                     <i class="material-icons ">swap_horiz</i>
-                    <span *ngIf="constant.UserLoggedInData.all_data?.type==1">Point Transfer</span>
+                    <!-- <span *ngIf="constant.UserLoggedInData.all_data?.type==1">Point Transfer</span> -->
                     <span *ngIf="constant.UserLoggedInData.all_data?.type==3">Point History</span>
                 </div>
                 
@@ -170,14 +170,20 @@
                 
                 <div class="btns-group" (click)="goOnDigitalcatPage()">
                     <i class="material-icons ">picture_as_pdf</i>
-                    <span>E-Catalogue</span>
+                    <span>Catalogue</span>
                 </div>
                 
                 
-                <div class="btns-group" (click)="goToDealerCheckin()">
+                <!-- <div class="btns-group" (click)="goToDealerCheckin()">
                     <i class="material-icons ">place</i>
                     <span *ngIf="constant.UserLoggedInData.all_data?.type==1">Dealer Check-in</span>
                     <span *ngIf="constant.UserLoggedInData.all_data?.type!=1">Sales User Check-in</span>
+                </div> -->
+
+                <div class="btns-group" (click)="goToRegistration()">
+                    <i class="material-icons ">border_color</i>
+                    <span>Warranty Registration</span>
+                    
                 </div>
                 
                 <!-- <div class="btns-group" (click)="goTopop()">
@@ -186,8 +192,8 @@
                 </div> -->
                 
                 
-<!--                 
-                <div class="btns-group" (click)="announcementList()">
+                 
+                <!-- <div class="btns-group" (click)="announcementList()">
                     <div class="rel">
                         <i class="material-icons">campaign</i>
                         <ng-container *ngIf="announcementCount > 0">
@@ -196,6 +202,7 @@
                     </div>
                     <span>Announcement</span>
                 </div> -->
+
                 <div class="btns-group" (click)="goToSurvey()">
                     <i class="material-icons ">poll</i>
                     <span>Survey</span>

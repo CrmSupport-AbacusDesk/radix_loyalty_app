@@ -61,7 +61,6 @@ export class RegistrationPage {
   ) {
     
     console.log(this.navParams);
-    this.data.type = '5';
     this.appVersion = navParams.get('app_version');
     this.data['device_unique_id']  = this.device.uuid;
     this.data['app_version']  = this.appVersion;
@@ -507,7 +506,7 @@ export class RegistrationPage {
       this.form.device_info = this.data.device_info;
       this.form.device_unique_id =this.data.device_unique_id;
       this.form.app_version = this.data.app_version;
-     ;
+     
       if (result['statusCode'] == 200) {
         this.serv.login_submit(this.form).then((result: any) => {
           if (result.loggedInUserType=='Other') {

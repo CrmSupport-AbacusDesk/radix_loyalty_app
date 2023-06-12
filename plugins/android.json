@@ -8,128 +8,128 @@
   },
   "installed_plugins": {
     "call-number": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "com-sarriaroman-photoviewer": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-android-support-gradle-release": {
       "ANDROID_SUPPORT_VERSION": "27.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-androidx-build": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-open-native-settings": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-actionsheet": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-app-version": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-camera": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-document-viewer": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-geolocation": {
       "GPS_REQUIRED": "true",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-gpsmockchecker": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-nativegeocoder": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-request-location-accuracy": {
       "PLAY_SERVICES_LOCATION_VERSION": "16.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-telerik-imagepicker": {
       "ANDROID_SUPPORT_V7_VERSION": "27.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-plugin-zip": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova.plugins.diagnostic": {
       "ANDROID_SUPPORT_VERSION": "28.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "phonegap-plugin-barcodescanner": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "phonegap-plugin-push": {
       "ANDROID_SUPPORT_V13_VERSION": "27.+",
       "FCM_VERSION": "17.0.+",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "polarcape-cordova-plugin-document-handler": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "uk.co.workingedge.cordova.plugin.sqliteporter": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "uk.co.workingedge.phonegap.plugin.launchnavigator": {
       "GOOGLE_API_KEY_FOR_ANDROID": "{AIzaSyAZ-kqYo3DslRI2VIuvP5GIK7OK-U9n3AQ}",
       "OKHTTP_VERSION": "3.12.0",
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     },
     "phonegap-plugin-multidex": {
-      "PACKAGE_NAME": "com.abacusdesk.pearls"
+      "PACKAGE_NAME": "com.abacusdesk.radixbattery"
     }
   }
 }

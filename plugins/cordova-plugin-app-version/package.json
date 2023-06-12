@@ -1,14 +1,40 @@
 {
-  "name": "cordova-plugin-app-version",
-  "version": "0.1.14",
+  "_args": [
+    [
+      "cordova-plugin-app-version@0.1.14",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_from": "cordova-plugin-app-version@0.1.14",
+  "_id": "cordova-plugin-app-version@0.1.14",
+  "_inBundle": false,
+  "_integrity": "sha512-HN6Yz6IIdRO+iMvCHN/qMe8/O4miOpHH/pDtWNjIYTjV3MzP+XdzFJoFnq2zxlNNXFz0Zn8REGQhFY77vV4AWQ==",
+  "_location": "/cordova-plugin-app-version",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-app-version@0.1.14",
+    "name": "cordova-plugin-app-version",
+    "escapedName": "cordova-plugin-app-version",
+    "rawSpec": "0.1.14",
+    "saveSpec": null,
+    "fetchSpec": "0.1.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-app-version/-/cordova-plugin-app-version-0.1.14.tgz",
+  "_spec": "0.1.14",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": {
+    "name": "whiteoctober"
+  },
+  "bugs": {
+    "url": "https://github.com/sampart/cordova-plugin-app-version/issues"
+  },
   "description": "Cordova plugin to return the version number of the current app",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sampart/cordova-plugin-app-version.git"
-  },
+  "homepage": "https://github.com/sampart/cordova-plugin-app-version#readme",
   "keywords": [
     "cordova",
     "ecosystem:cordova",
@@ -17,10 +43,14 @@
     "appversion",
     "plugin"
   ],
-  "author": "whiteoctober",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sampart/cordova-plugin-app-version/issues"
+  "name": "cordova-plugin-app-version",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampart/cordova-plugin-app-version.git"
   },
-  "homepage": "https://github.com/sampart/cordova-plugin-app-version#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.14"
 }

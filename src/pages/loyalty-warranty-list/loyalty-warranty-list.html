@@ -1,0 +1,83 @@
+ <ion-header>
+    
+  <ion-navbar>
+      <ion-title>Warranty List</ion-title>
+  </ion-navbar>    
+
+</ion-header>
+
+<ion-content>
+  
+  <div class="nothing-here"*ngIf="warrenty_list.length == 0">
+      
+      <div class="outer">
+          <div class="innear">
+              <img src="assets/imgs/no_found.svg" alt="">
+              <p>Data Not Available</p>
+          </div>
+      </div>
+  </div>
+  
+   
+      <div class="cs-list" *ngFor="let row of warrenty_list" >
+
+        <div class="top-block">
+            <div>#WR{{row.id}}&nbsp;</div>
+            <!-- <ion-icon name="arrow-forward"   ios="ios-arrow-forward"></ion-icon> -->
+        </div>
+          <div class="middle-block">
+               
+                  <div class="three-block pb0">
+                      <strong>purchase Date</strong>    
+                      <p>{{row.customer_purchase_date | date:'d MMM y'}}</p>
+                  </div>
+               
+               
+                 <div class="three-block pb0" >
+                   <strong>Customer Name</strong>
+                   <p>{{row.customer_name}}</p>
+                 </div>
+               
+            
+                 <div class="three-block pb0" >
+                  <strong>Customer Email</strong>
+                  <p>{{row.customer_email}}</p>
+                 </div>
+               
+        
+                 <div class="three-block pb0" >
+                  <strong>Battery Serial no.</strong>
+                  <p>{{row.battery_serial_no}}</p>
+                 </div>
+               
+
+          </div>
+          
+           
+      </div> 
+      <ion-fab right bottom>
+        <button ion-fab color="primary" (click)="addRegistration()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+<!--       
+      <div class="cus-fab">
+        <button color="primary" (click)="addRegistration()">
+            <i class="material-icons">add</i>
+        </button>
+      </div> -->
+
+ 
+</ion-content>
+
+<!-- <div class="cus-fab">
+  <button color="primary" (click)="addRegistration()">
+      <i class="material-icons">add</i>
+  </button>
+</div> -->
+
+
+
+
+
+

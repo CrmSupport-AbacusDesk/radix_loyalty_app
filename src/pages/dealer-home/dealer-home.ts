@@ -46,6 +46,7 @@ import { TargetPage } from '../target/target';
 import { AnnouncementListPage } from '../announcement/announcement-list/announcement-list';
 import { Storage } from '@ionic/storage';
 import { SelectRegistrationTypePage } from '../select-registration-type/select-registration-type';
+import { LoyaltyWarrantyListPage } from '../loyalty-warranty-list/loyalty-warranty-list';
 
 @IonicPage()
 @Component({
@@ -184,6 +185,12 @@ export class DealerHomePage {
         } else if (this.Dr_Data.type == 3) {
             this.navCtrl.push(SecondaryOrderPage);
         }
+    }
+
+    goToRegistration(){
+     this.navCtrl.push(LoyaltyWarrantyListPage);
+       
+
     }
 
     goTosecondary() {
@@ -337,7 +344,7 @@ export class DealerHomePage {
         this.barcodeScanner.scan(options).then(resp => {
             this.qr_code = resp.text;
             if (resp.text != '') {
-                this.serve.addData({ 'coupon_code': this.qr_code }, 'Influencer/coupon_code_scan').then((r: any) => {
+                this.serve.addData({ 'coupon_code': this.qr_code }, 'AppCouponScan/couponCodeScan').then((r: any) => {
                     if (r['status'] == 'Success' && r['bonus_point'] > 0) {
                         let contactModal = this.modalCtrl.create(CongratulationsPage, { 'scan_point': r['coupon_point'], 'user_type': 'retailer', 'bonus_point': r['bonus_point'] });
                         contactModal.present();
@@ -349,7 +356,7 @@ export class DealerHomePage {
                         return;
                     }
                     else {
-                        this.showAlert(r['msg']);
+                        this.showAlert(r['statusMsg']);
                     }
                 });
             }
@@ -358,7 +365,7 @@ export class DealerHomePage {
         });
     }
     goToWallet() {
-        this.navCtrl.push(DistributorDealerWalletPage);
+        this.navCtrl.push(LoyaltyPointHistoryPage);
     }
 
 

@@ -1,9 +1,36 @@
 {
-  "name": "cordova-plugin-document-viewer",
-  "version": "1.0.0",
-  "description": "PDF Document viewer cordova plugin for iOS, Android and Windows 8.1 + 10",
-  "license": "MIT",
-  "author": "Felix Schauerte",
+  "_args": [
+    [
+      "cordova-plugin-document-viewer@1.0.0",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_development": true,
+  "_from": "cordova-plugin-document-viewer@1.0.0",
+  "_id": "cordova-plugin-document-viewer@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LQZiWVU543rLJ0wYoawSdMrAfoxBLWCx8a2CuQjFeav4U9CN16QAh1VHetHaHicp5ZEwTC7Zq/0TNbak6A7bVw==",
+  "_location": "/cordova-plugin-document-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-document-viewer@1.0.0",
+    "name": "cordova-plugin-document-viewer",
+    "escapedName": "cordova-plugin-document-viewer",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-document-viewer/-/cordova-plugin-document-viewer-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": {
+    "name": "Felix Schauerte"
+  },
   "bugs": {
     "url": "https://github.com/sitewaerts/cordova-plugin-document-viewer/issues"
   },
@@ -15,9 +42,16 @@
       "windows"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sitewaerts/cordova-plugin-document-viewer.git"
+  "description": "PDF Document viewer cordova plugin for iOS, Android and Windows 8.1 + 10",
+  "devDependencies": {},
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">=10.0.0",
+        "cordova-android": ">=9.0.0",
+        "cordova-windows": ">=4.4.0"
+      }
+    }
   },
   "homepage": "https://github.com/sitewaerts/cordova-plugin-document-viewer#readme",
   "keywords": [
@@ -28,15 +62,11 @@
     "cordova-windows",
     "pdf"
   ],
-  "engines": {
-    "cordovaDependencies": {
-      "1.0.0": {
-        "cordova": ">=10.0.0",
-        "cordova-windows": ">=4.4.0",
-        "cordova-android": ">=9.0.0"
-      }
-    }
+  "license": "MIT",
+  "name": "cordova-plugin-document-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitewaerts/cordova-plugin-document-viewer.git"
   },
-  "devDependencies": {
-  }
+  "version": "1.0.0"
 }

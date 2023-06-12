@@ -258,6 +258,11 @@ import { DistributorDealerWalletPageModule } from '../pages/distributor-dealer-w
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExpenseAddNewPageModule } from '../pages/expense-add-new/expense-add-new.module';
 import { ImagePicker } from '@ionic-native/image-picker';
+import { LoyaltyWarrantyListPage } from '../pages/loyalty-warranty-list/loyalty-warranty-list';
+import { LoyaltyWarrantyListPageModule } from '../pages/loyalty-warranty-list/loyalty-warranty-list.module';
+import { WarrantyAddPageModule } from '../pages/warranty-add/warranty-add.module';
+
+
 
 // import { GoogleMaps } from '@ionic-native/google-maps';
 @NgModule({
@@ -493,7 +498,9 @@ import { ImagePicker } from '@ionic-native/image-picker';
         UserTargetPageModule,
         PartyTargetPageModule,
         OrderStatusChangePageModule,
-        DistributorDealerWalletPageModule
+        DistributorDealerWalletPageModule,
+        LoyaltyWarrantyListPageModule,
+        WarrantyAddPageModule
         
 
     ],
@@ -514,7 +521,9 @@ import { ImagePicker } from '@ionic-native/image-picker';
         // VisitingCardModalPage,
         // ContractorModalPage,
         AnnouncementListPage,
-        UploadFilePage
+        UploadFilePage,
+        LoyaltyWarrantyListPage,
+        LoyaltyWarrantyListPage
 
         // CancelationPolicyPage
         // ExecutivePopoverPage

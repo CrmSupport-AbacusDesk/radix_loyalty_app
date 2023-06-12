@@ -83,9 +83,14 @@
     </div>
   </ng-container>
   
-  <button ion-button round block color="secondary"
+  <!-- <button ion-button round block color="secondary"
   [disabled]="(influencer_point.country=='india'  ? (data.payment_mode=='Bank' ?  influencer_point.payout_kyc_status!='Approved' : !data.wallet_no.length) : !data.wallet_no)"
   (click)="SendRequest()">
+  Send Redeem Request
+</button> -->
+
+
+<button ion-button round  block color="secondary" (click)="SendRequest()" >
   Send Redeem Request
 </button>
 </div>
