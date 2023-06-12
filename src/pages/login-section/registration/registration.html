@@ -8,7 +8,7 @@
     <form #f="ngForm" (ngSubmit)="f.form.valid && submit()">
         <div class="form">
             <ion-list no-lines class="padding10 pt0">
-                <!-- <div class="select-type" *ngIf="!data.exist_id">
+                <div class="select-type" *ngIf="!data.exist_id">
                     <ion-list-header class="heading mt0">
                         {{'Select Type'}}
                     </ion-list-header>
@@ -21,9 +21,9 @@
                             </ion-item>
                         </ng-container>
                     </ion-list>
-                </div> -->
-                <!-- *ngIf="data.type" -->
-                <ng-container >
+                </div>
+                
+                <ng-container *ngIf="data.type">
                     <ion-item *ngIf="data.profile">
                         <div class="profile-circle">
                             <i class="material-icons" *ngIf="data.profile == undefined">camera_alt</i>
@@ -283,7 +283,7 @@
 
             </ion-list>
 
-            <div class="pl10 pr10">
+            <div class="pl10 pr10" *ngIf="data.type">
                 <button ion-button full color="primary" [disabled]="savingFlag == true">
                     {{data.exist_id ? 'Update' : 'Continue'}}
                 </button>

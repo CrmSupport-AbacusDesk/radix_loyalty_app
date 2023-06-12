@@ -1,7 +1,38 @@
 {
-  "name": "cordova-plugin-actionsheet",
-  "version": "2.3.3",
-  "description": "Show a sheet of options the user can choose from.",
+  "_args": [
+    [
+      "cordova-plugin-actionsheet@2.3.3",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_from": "cordova-plugin-actionsheet@2.3.3",
+  "_id": "cordova-plugin-actionsheet@2.3.3",
+  "_inBundle": false,
+  "_integrity": "sha512-vwjLku1pmuvcqVSqW0MR5OoYMg4lcZdJ3fbZpypjm5xUQ7Ooy9OIGZnokyU08HTWR1xnPBbMZz4R+i4CNA1LBA==",
+  "_location": "/cordova-plugin-actionsheet",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-actionsheet@2.3.3",
+    "name": "cordova-plugin-actionsheet",
+    "escapedName": "cordova-plugin-actionsheet",
+    "rawSpec": "2.3.3",
+    "saveSpec": null,
+    "fetchSpec": "2.3.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-actionsheet/-/cordova-plugin-actionsheet-2.3.3.tgz",
+  "_spec": "2.3.3",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": {
+    "name": "Eddy Verbruggen - @EddyVerbruggen"
+  },
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet/issues"
+  },
   "cordova": {
     "id": "cordova-plugin-actionsheet",
     "platforms": [
@@ -10,10 +41,14 @@
       "wp8"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
-  },
+  "description": "Show a sheet of options the user can choose from.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet#readme",
   "keywords": [
     "ActionSheet",
     "UIActionSheet",
@@ -28,16 +63,11 @@
     "cordova-android",
     "cordova-wp8"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "author": "Eddy Verbruggen - @EddyVerbruggen",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet/issues"
+  "name": "cordova-plugin-actionsheet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git"
   },
-  "homepage": "https://github.com/EddyVerbruggen/cordova-plugin-actionsheet#readme"
+  "version": "2.3.3"
 }

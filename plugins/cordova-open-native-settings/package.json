@@ -1,7 +1,62 @@
 {
-  "name": "cordova-open-native-settings",
-  "version": "1.5.5",
-  "description": "Native settings opener for Cordova",
+  "_args": [
+    [
+      "cordova-open-native-settings@1.5.5",
+      "D:\\Radix web\\radix_loyalty_app"
+    ]
+  ],
+  "_development": true,
+  "_from": "cordova-open-native-settings@1.5.5",
+  "_id": "cordova-open-native-settings@1.5.5",
+  "_inBundle": false,
+  "_integrity": "sha512-t3we7dUTUamuxVMl/nE6RBNqEyTtUuxvtjXI/BrevuoBIl2nI9GJpTvD9witJkpzf0isCv3zMuiLd9tP+2+LVw==",
+  "_location": "/cordova-open-native-settings",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-open-native-settings@1.5.5",
+    "name": "cordova-open-native-settings",
+    "escapedName": "cordova-open-native-settings",
+    "rawSpec": "1.5.5",
+    "saveSpec": null,
+    "fetchSpec": "1.5.5"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-open-native-settings/-/cordova-open-native-settings-1.5.5.tgz",
+  "_spec": "1.5.5",
+  "_where": "D:\\Radix web\\radix_loyalty_app",
+  "author": {
+    "name": "Guy Rombaut",
+    "email": "admin@gsrweb.net"
+  },
+  "bugs": {
+    "url": "https://github.com/guyromb/Cordova-open-native-settings/issues"
+  },
+  "contributors": [
+    {
+      "name": "Guy Rombaut",
+      "email": "admin@gsrweb.net",
+      "url": "http://gsrweb.net"
+    },
+    {
+      "name": "unknown"
+    },
+    {
+      "name": "unknown"
+    },
+    {
+      "name": "unknown"
+    },
+    {
+      "name": "unknown"
+    },
+    {
+      "name": "unknown"
+    }
+  ],
   "cordova": {
     "id": "cordova-open-native-settings",
     "platforms": [
@@ -9,16 +64,7 @@
       "ios"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/guyromb/Cordova-open-native-settings"
-  },
-  "keywords": [
-    "native-settings",
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
-  ],
+  "description": "Native settings opener for Cordova",
   "engines": {
     "cordovaDependencies": {
       "1.5.0": {
@@ -26,38 +72,18 @@
       }
     }
   },
-  "author": "Guy Rombaut <admin@gsrweb.net>",
-  "contributors": [
-    {
-      "name": "Guy Rombaut",
-      "email": "admin@gsrweb.net",
-      "url": "http://gsrweb.net",
-      "username": "guyromb"
-    },
-    {
-      "name": "unknown",
-      "username": "deefactorial"
-    },
-    {
-      "name": "unknown",
-      "username": "selahssea"
-    },
-    {
-      "name": "unknown",
-      "username": "asmund1"
-    },
-    {
-      "name": "unknown",
-      "username": "perlish"
-    },
-    {
-      "name": "unknown",
-      "username": "emcniece"
-    }
+  "homepage": "https://github.com/guyromb/Cordova-open-native-settings#readme",
+  "keywords": [
+    "native-settings",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/guyromb/Cordova-open-native-settings/issues"
+  "name": "cordova-open-native-settings",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyromb/Cordova-open-native-settings.git"
   },
-  "homepage": "https://github.com/guyromb/Cordova-open-native-settings#readme"
+  "version": "1.5.5"
 }

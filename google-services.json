@@ -1,79 +1,83 @@
 {
   "project_info": {
-    "project_number": "932792241102",
-    "project_id": "pearl-abee3",
-    "storage_bucket": "pearl-abee3.appspot.com"
+    "project_number": "522467248939",
+    "project_id": "basiq360",
+    "storage_bucket": "basiq360.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:932792241102:android:e8555876bcd71c141ff99f",
+        "mobilesdk_app_id": "1:522467248939:android:2fbdd255f99cf844b2136e",
         "android_client_info": {
-          "package_name": "com.abacusdesk.pearls"
+          "package_name": "com.abacusdesk.bonus_locks"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCqIDiCbSG7IqZahY7_xkD88HJsNo8jqYQ"
+          "current_key": "AIzaSyCFlyyuT3cTiqmeW0-kr1Y6S1uKRrrh0J4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "932792241102-sme88qetshgu6va7a11l92rrevoqn2i8.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.abacusdesk.pearls"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:932792241102:android:9e455fa6a28363801ff99f",
+        "mobilesdk_app_id": "1:522467248939:android:7b9076acd9d77fdab2136e",
         "android_client_info": {
-          "package_name": "com.pearl.app"
+          "package_name": "com.abacusdesk.kc_good_shine"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCqIDiCbSG7IqZahY7_xkD88HJsNo8jqYQ"
+          "current_key": "AIzaSyCFlyyuT3cTiqmeW0-kr1Y6S1uKRrrh0J4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "932792241102-0qphr5r40e98ffd72ub64hq2709s256d.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "932792241102-sme88qetshgu6va7a11l92rrevoqn2i8.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.abacusdesk.pearls"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522467248939:android:ad808a8030ead1b2b2136e",
+        "android_client_info": {
+          "package_name": "com.abacusdesk.radixbattery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFlyyuT3cTiqmeW0-kr1Y6S1uKRrrh0J4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522467248939:android:2c917cad02cce60eb2136e",
+        "android_client_info": {
+          "package_name": "com.abasdesk.freshup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFlyyuT3cTiqmeW0-kr1Y6S1uKRrrh0J4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
         }
       }
     }

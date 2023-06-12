@@ -1,0 +1,54 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>warranty-add</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #f="ngForm" (ngSubmit)="f.form.valid && submit()">
+  <div class="form">
+    <ion-list no-lines class="padding10 pt0">
+            <ion-item   class="cs-input" [ngClass]="{'error':f.submitted && customer_name?.invalid}">
+                <ion-label floating>{{'Customer Name'}}<span>*</span></ion-label>
+                <ion-input type="text" name="customer_name" #customer_name="ngModel" [(ngModel)]="data.customer_name"(ngModelChange)="(data.first_name!=null)?data.first_name[0] = data.first_name[0].toUpperCase():''" required></ion-input>
+            </ion-item>
+
+
+            <ion-item  class="cs-input" [ngClass]="{'error':f.submitted && customer_mobile?.invalid}" >
+              <ion-label floating>{{'Mobile no.'}}<span>*</span></ion-label>
+              <ion-input type="text" name="customer_mobile" #customer_mobile="ngModel" [(ngModel)]="data.customer_mobile" maxlength="10" (keypress)="MobileNumber($event)" required></ion-input>
+          </ion-item>
+
+          <ion-item class="cs-input" [ngClass]="{'error':(f.submitted && customer_email?.invalid) || (f.submitted && !customer_email.valid)}">
+            <ion-label floating>{{'Email ID (optional)'}}</ion-label>
+            <ion-input type="text" type="text" name="customer_email" #customer_email="ngModel" [(ngModel)]="data.customer_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></ion-input>
+            <p></p>
+        </ion-item>
+
+        <ion-item  class="cs-input" [ngClass]="{'error':f.submitted && battery_serial_no?.invalid}" >
+          <ion-label floating>{{'Serial no'}}<span>*</span></ion-label>
+          <ion-input type="text" name="battery_serial_no" #battery_serial_no="ngModel" [(ngModel)]="data.battery_serial_no" required></ion-input>
+      </ion-item>
+
+
+      <ion-item class="cs-input" [ngClass]="{'error':f.submitted && customer_purchase_date?.invalid}">
+        <ion-label floating>{{'purchase Date'}}<span>*</span></ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" max={{today_date}} type="text" name="customer_purchase_date" #customer_purchase_date="ngModel" [(ngModel)]="data.customer_purchase_date" required>
+        </ion-datetime>
+    </ion-item>
+            
+          
+            
+
+
+    </ion-list>
+
+    <div class="pl10 pr10">
+        <button ion-button full color="primary" [disabled]="savingFlag == true">
+          Save
+        </button>
+    </div>
+</div>
+</form>
+</ion-content>

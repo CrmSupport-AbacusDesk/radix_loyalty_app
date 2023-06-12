@@ -96,39 +96,71 @@ export class LoyaltyGiftGalleryDetailPage {
     });
   }
 
-  SendRequest() {
+  // SendRequest() {
 
-    if (this.gift_detail.gift_type == 'Cash') {
-      if (this.data.cash_point == undefined) {
+  //   if (this.gift_detail.gift_type == 'Cash') {
+  //     if (this.data.cash_point == undefined) {
+  //       this.service.errorToast('Please enter redeem points value');
+  //       return
+  //     }
+
+  //     if (!this.data.payment_mode && this.influencer_point.country.trim().toLowerCase() == 'india') {
+  //       this.service.errorToast('Please Select Payment Mode First');
+  //       return
+  //     }
+
+  //     if ( parseInt(this.data.wallet_no.length)!=10 && this.data.payment_mode!='Bank' ) {
+  //       this.service.errorToast('Please Enter 10 Digit Mobile No.');
+  //       return
+  //     }
+
+  //     if (parseFloat(this.data.cash_point) > parseFloat(this.influencer_point.wallet_point)) {
+  //       this.service.errorToast('Insufficient point in your wallet');
+  //       return
+  //     }
+  //     else {
+  //       this.navCtrl.push(LoyaltyRedeemRequestPage, { 'karigar_id': this.influencer_point.id, 'gift_id': this.gift_id, "mode": "reedeemPoint", 'offer_balance': this.offer_balance, 'cash_point': this.data.cash_point, 'gift_type': 'Cash', 'cash_value': this.data.cash_value, 'payment_mode': this.data.payment_mode || 'Khalti', 'wallet_no': this.data.wallet_no })
+  //     }
+  //   }
+  //   if (parseFloat(this.influencer_point.wallet_point) < parseFloat(this.gift_detail.gift_point)) {
+  //     this.service.errorToast('Insufficient point in your wallet');
+  //     return
+  //   }
+
+  //   if (this.gift_detail.gift_type == 'Gift') {
+  //     this.navCtrl.push(LoyaltyRedeemRequestPage, { 'karigar_id': this.influencer_point.id, 'gift_id': this.gift_id, "mode": "reedeemPoint", 'offer_balance': this.offer_balance, 'gift_type': 'Gift', 'payment_mode': this.data.payment_mode, 'wallet_no': this.data.wallet_no })
+  //   }
+  //   // else{
+  //   // }
+  // }
+
+
+
+  SendRequest(){
+    if(this.gift_detail.gift_type ==  'Cash'){
+      if(this.data.cash_point == undefined){
         this.service.errorToast('Please enter redeem points value');
         return
       }
 
-      if (!this.data.payment_mode && this.influencer_point.country.trim().toLowerCase() == 'india') {
-        this.service.errorToast('Please Select Payment Mode First');
+      if(parseFloat(this.data.cash_point) > parseFloat(this.influencer_point.wallet_point)){
+        this.service.errorToast('Insufficient Balance');
         return
       }
+      else{
+        console.log('Data',this.data)
+        console.log('Data id',this.db.tokenInfo.id)
 
-      if ( parseInt(this.data.wallet_no.length)!=10 && this.data.payment_mode!='Bank' ) {
-        this.service.errorToast('Please Enter 10 Digit Mobile No.');
-        return
-      }
-
-      if (parseFloat(this.data.cash_point) > parseFloat(this.influencer_point.wallet_point)) {
-        this.service.errorToast('Insufficient point in your wallet');
-        return
-      }
-      else {
-        this.navCtrl.push(LoyaltyRedeemRequestPage, { 'karigar_id': this.influencer_point.id, 'gift_id': this.gift_id, "mode": "reedeemPoint", 'offer_balance': this.offer_balance, 'cash_point': this.data.cash_point, 'gift_type': 'Cash', 'cash_value': this.data.cash_value, 'payment_mode': this.data.payment_mode || 'Khalti', 'wallet_no': this.data.wallet_no })
+        this.navCtrl.push(LoyaltyRedeemRequestPage,{'karigar_id':this.constant.UserLoggedInData.id,'gift_id':this.gift_id,"mode":"reedeemPoint",'offer_balance':this.offer_balance, 'cash_point':this.data.cash_point, 'gift_type':'Cash', 'cash_value':this.data.cash_value})
       }
     }
-    if (parseFloat(this.influencer_point.wallet_point) < parseFloat(this.gift_detail.gift_point)) {
-      this.service.errorToast('Insufficient point in your wallet');
+    if(parseFloat(this.influencer_point.wallet_point) < parseFloat(this.gift_detail.gift_point)){
+      this.service.errorToast('Insufficient Balance');
       return
     }
 
-    if (this.gift_detail.gift_type == 'Gift') {
-      this.navCtrl.push(LoyaltyRedeemRequestPage, { 'karigar_id': this.influencer_point.id, 'gift_id': this.gift_id, "mode": "reedeemPoint", 'offer_balance': this.offer_balance, 'gift_type': 'Gift', 'payment_mode': this.data.payment_mode, 'wallet_no': this.data.wallet_no })
+    if(this.gift_detail.gift_type ==  'Gift'){
+      this.navCtrl.push(LoyaltyRedeemRequestPage,{'karigar_id':this.constant.UserLoggedInData.id,'gift_id':this.gift_id,"mode":"reedeemPoint",'offer_balance':this.offer_balance,  'gift_type':'Gift'})
     }
     // else{
     // }

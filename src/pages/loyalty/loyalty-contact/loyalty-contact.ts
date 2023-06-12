@@ -16,6 +16,7 @@ import { MyserviceProvider } from '../../../providers/myservice/myservice';
 })
 export class LoyaltyContactPage {
   contact:any ={};
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, public service:MyserviceProvider) {
     this.contactDetails();
   }

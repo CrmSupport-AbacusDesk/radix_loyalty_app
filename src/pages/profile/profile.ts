@@ -12,6 +12,7 @@ import { SelectRegistrationTypePage } from '../select-registration-type/select-r
 import { HomePage } from '../home/home';
 import { MyserviceProvider } from '../../providers/myservice/myservice';
 import { ConstantProvider } from '../../providers/constant/constant';
+import { LoginPage } from '../login/login';
 
 
 
@@ -73,7 +74,7 @@ export class ProfilePage {
               console.log(this.constant.UserLoggedInData);
               this.events.publish('data','1', Date.now());
               this.showSuccess( " Logout Successfully ");
-              this.navCtrl.setRoot(SelectRegistrationTypePage);
+              this.navCtrl.setRoot(LoginPage);
             }
           }
         ]
