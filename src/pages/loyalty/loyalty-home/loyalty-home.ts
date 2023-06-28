@@ -35,6 +35,7 @@ import { LoyaltyGiftGalleryDetailPage } from '../loyalty-gift-gallery-detail/loy
   templateUrl: 'loyalty-home.html',
 })
 export class LoyaltyHomePage {
+  @ViewChild('selectComponent') selectComponent: IonicSelectableComponent;
   influencer_detail: any = {}
   loading: Loading;
   bannerURL: any;
@@ -151,64 +152,68 @@ export class LoyaltyHomePage {
 
 
   Scaning() {
-    const options: BarcodeScannerOptions = {
-      prompt: ""
-    };
-    this.barcodeScanner.scan(options).then(resp => {
-      this.qr_code = resp.text;
-      if (resp.text != '') {
-        this.service.presentLoading();
-        this.service.addData({ 'coupon_code': this.qr_code, }, 'AppCouponScan/couponCodeScan').then((r: any) => {
-          if (r['statusCode'] == 200 && r['bonus_point'] > 0) {
-            this.service.successToast((r['coupon_point'] + r['bonus_point']) + " points has been added into your wallet");
-            this.service.dismissLoading();
-            setTimeout(() => {
-              this.Scaning()
-            }, 800);
-          }
-          else if (r['statusCode'] == 200) {
-            this.service.successToast(r['coupon_point'] + " points has been added into your wallet");
-            this.service.dismissLoading();
-            setTimeout(() => {
-              this.Scaning();
-            }, 800);
-          }
-          else {
-            this.service.dismissLoading();
-            let Message = r['statusMsg']
-            let alert = this.alertCtrl.create({
-              enableBackdropDismiss: false,
-              title: 'Alert !',
-              message: Message,
-              cssClass: 'alert-modal',
-              buttons: [
-                {
-                  text: 'Cancel',
-                  handler: () => {
+    this.platform.ready().then(() => {
+      const options: BarcodeScannerOptions = {
+        prompt: ""
+      };
+      this.barcodeScanner.scan(options).then(resp => {
+        this.qr_code = resp.text;
+        if (resp.text != '') {
+          this.service.presentLoading();
+          this.service.addData({ 'coupon_code': this.qr_code, }, 'AppCouponScan/couponCodeScan').then((r: any) => {
+            if (r['statusCode'] == 200 && r['bonus_point'] > 0) {
+              this.service.successToast((r['coupon_point'] + r['bonus_point']) + " points has been added into your wallet");
+              this.service.dismissLoading();
+              setTimeout(() => {
+                this.Scaning()
+              }, 800);
+            }
+            else if (r['statusCode'] == 200) {
+              this.service.successToast(r['coupon_point'] + " points has been added into your wallet");
+              this.service.dismissLoading();
+              setTimeout(() => {
+                this.Scaning();
+              }, 800);
+            }
+            else {
+              this.service.dismissLoading();
+              let Message = r['statusMsg']
+              let alert = this.alertCtrl.create({
+                enableBackdropDismiss: false,
+                title: 'Alert !',
+                message: Message,
+                cssClass: 'alert-modal',
+                buttons: [
+                  {
+                    text: 'Cancel',
+                    handler: () => {
+                    }
+                  },
+                  {
+                    text: 'Try Again',
+                    handler: () => {
+                      this.Scaning()
+                    }
                   }
-                },
-                {
-                  text: 'Try Again',
-                  handler: () => {
-                    this.Scaning()
-                  }
-                }
-              ]
-            });
-            alert.present();
-          }
-        }, err => {
-          this.service.dismissLoading();
-          this.service.Error_msg(err)
-        });
-      }
-      else {
-      }
-    }, err => {
-      console.log(err)
-      this.service.dismissLoading()
-      this.presentConfirm('Turn On Camera permisssion !', 'please go to <strong>Settings</strong> -> Camera to turn on <strong>Camera permission</strong>')
-    })
+                ]
+              });
+              alert.present();
+            }
+          }, err => {
+            this.service.dismissLoading();
+            this.service.Error_msg(err)
+          });
+        }
+        else {
+        }
+      }, err => {
+        console.log(err)
+        this.service.dismissLoading()
+        this.selectComponent.close()
+        this.presentConfirm('Turn On Camera permisssion !', 'please go to <strong>Settings</strong> -> Camera to turn on <strong>Camera permission</strong>')
+      })
+      
+    });
   }
   presentConfirm(title, msg) {
     let alert = this.alertCtrl.create({
