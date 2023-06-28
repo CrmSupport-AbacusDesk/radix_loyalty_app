@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events, ToastController, Loading, LoadingController, ModalController, AlertController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Events, ToastController, Loading, LoadingController, ModalController, AlertController, Platform } from 'ionic-angular';
 import { NewarrivalsPage } from '../newarrivals/newarrivals';
 import { AboutPage } from '../about/about';
 import { DealerOrderPage } from '../dealer-order/dealer-order';
@@ -47,6 +47,8 @@ import { AnnouncementListPage } from '../announcement/announcement-list/announce
 import { Storage } from '@ionic/storage';
 import { SelectRegistrationTypePage } from '../select-registration-type/select-registration-type';
 import { LoyaltyWarrantyListPage } from '../loyalty-warranty-list/loyalty-warranty-list';
+import { IonicSelectableComponent } from 'ionic-selectable';
+import { OpenNativeSettings } from '@ionic-native/open-native-settings';
 
 @IonicPage()
 @Component({
@@ -54,6 +56,7 @@ import { LoyaltyWarrantyListPage } from '../loyalty-warranty-list/loyalty-warran
     templateUrl: 'dealer-home.html',
 })
 export class DealerHomePage {
+    @ViewChild('selectComponent') selectComponent: IonicSelectableComponent
     lable: any;
     prodCount: any = {};
     Dr_Data: any = {};
@@ -81,6 +84,8 @@ export class DealerHomePage {
         public locationAccuracy: LocationAccuracy,
         private barcodeScanner: BarcodeScanner,
         public geolocation: Geolocation,
+        public platform: Platform,
+        public openNativeSettings: OpenNativeSettings,
         public toastCtrl: ToastController) {
         this.bannerURL = constant.upload_url1 + 'banner/';
     }
@@ -337,31 +342,68 @@ export class DealerHomePage {
         });
         alert.present();
     }
-    scan() {
-        const options: BarcodeScannerOptions = {
+    Scaning() {
+        this.platform.ready().then(() => {
+          const options: BarcodeScannerOptions = {
             prompt: ""
-        };
-        this.barcodeScanner.scan(options).then(resp => {
+          };
+          this.barcodeScanner.scan(options).then(resp => {
             this.qr_code = resp.text;
             if (resp.text != '') {
-                this.serve.addData({ 'coupon_code': this.qr_code }, 'AppCouponScan/couponCodeScan').then((r: any) => {
-                    if (r['status'] == 'Success' && r['bonus_point'] > 0) {
-                        let contactModal = this.modalCtrl.create(CongratulationsPage, { 'scan_point': r['coupon_point'], 'user_type': 'retailer', 'bonus_point': r['bonus_point'] });
-                        contactModal.present();
-                        return;
-                    }
-                    else if (r['status'] == 'Success') {
-                        this.showSuccess(r['coupon_point'] + " points has been added into your wallet");
-                        this.navCtrl.push(DealerHomePage);
-                        return;
-                    }
-                    else {
-                        this.showAlert(r['statusMsg']);
-                    }
-                });
+              this.serve.presentLoading();
+              this.serve.addData({ 'coupon_code': this.qr_code, }, 'AppCouponScan/couponCodeScan').then((r: any) => {
+                if (r['statusCode'] == 200 && r['bonus_point'] > 0) {
+                  this.serve.successToast((r['coupon_point'] + r['bonus_point']) + " points has been added into your wallet");
+                  this.serve.dismissLoading();
+                  setTimeout(() => {
+                    this.Scaning()
+                  }, 800);
+                }
+                else if (r['statusCode'] == 200) {
+                  this.serve.successToast(r['coupon_point'] + " points has been added into your wallet");
+                  this.serve.dismissLoading();
+                  setTimeout(() => {
+                    this.Scaning();
+                  }, 800);
+                }
+                else {
+                  this.serve.dismissLoading();
+                  let Message = r['statusMsg']
+                  let alert = this.alertCtrl.create({
+                    enableBackdropDismiss: false,
+                    title: 'Alert !',
+                    message: Message,
+                    cssClass: 'alert-modal',
+                    buttons: [
+                      {
+                        text: 'Cancel',
+                        handler: () => {
+                        }
+                      },
+                      {
+                        text: 'Try Again',
+                        handler: () => {
+                          this.Scaning()
+                        }
+                      }
+                    ]
+                  });
+                  alert.present();
+                }
+              }, err => {
+                this.serve.dismissLoading();
+                this.serve.Error_msg(err)
+              });
             }
             else {
             }
+          }, err => {
+            console.log(err)
+            this.serve.dismissLoading()
+            this.selectComponent.close()
+            this.presentConfirm('Turn On Camera permisssion !', 'please go to <strong>Settings</strong> -> Camera to turn on <strong>Camera permission</strong>')
+          })
+          
         });
     }
     goToWallet() {
@@ -402,5 +444,31 @@ export class DealerHomePage {
         this.serve.errorToast("You Are Currently In Active, Contact To Admin.");
         this.navCtrl.setRoot(SelectRegistrationTypePage);
     }
+    presentConfirm(title, msg) {
+        let alert = this.alertCtrl.create({
+          enableBackdropDismiss: false,
+          title: title,
+          message: msg,
+          cssClass: 'alert-modal',
+          
+          buttons: [
+            {
+              text: 'Cancel',
+              handler: () => {
+              }
+            },
+            {
+              text: 'Settings',
+              handler: () => {
+                this.openSettings()
+              }
+            }
+          ]
+        });
+        alert.present();
+      }
+      openSettings() {
+        this.openNativeSettings.open("application_details")
+      }
 
 }
